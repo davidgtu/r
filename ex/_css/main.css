@@ -2023,22 +2023,22 @@ body {
   100% {
     opacity: 1; } }
 
-.master-content {
+#master-content {
   margin-top: 10vh; }
-  .master-content.anim-element {
-    -webkit-animation-duration: 0.5s;
-    animation-duration: 0.5s;
+  #master-content.anim-element {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
     -webkit-transition-timing-function: ease-in;
     -o-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both; }
-  .master-content.anim-element--fadein {
+  #master-content.anim-element--fadein {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn; }
-  .master-content.is-exiting .anim-element {
-    -webkit-animation-direction: alternate-reverse;
-    animation-direction: alternate-reverse; }
+  #master-content.is-exiting {
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse; }
 
 .doggo-list.anim-element {
   -webkit-animation-duration: 1s;
@@ -2053,9 +2053,9 @@ body {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn; }
 
-.doggo-list.is-exiting .anim-element {
-  -webkit-animation-direction: alternate-reverse;
-  animation-direction: alternate-reverse; }
+.doggo-list.is-exiting {
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse; }
 
 .links {
   position: fixed;

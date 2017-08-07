@@ -1,7 +1,7 @@
-.master-content {
+#master-content {
   margin-top: 10vh;
   &.anim-element {
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     transition-timing-function: ease-in;
     animation-fill-mode: both;
   }
@@ -11,9 +11,7 @@
   }
 
   &.is-exiting {
-    .anim-element {
-      animation-direction: alternate-reverse;
-    }
+      animation-direction: reverse;
   }
 
 }
@@ -30,8 +28,6 @@
   }
 
   &.is-exiting {
-    .anim-element {
-      animation-direction: alternate-reverse;
-    }
+      animation-direction: reverse;
   }
 }

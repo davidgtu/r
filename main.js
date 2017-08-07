@@ -7,15 +7,15 @@ $(function() {
   };
 
   var $body = $('html, body');
-  var content = $('.main-content').smoothState({
+  var content = $('#master-content').smoothState({
     onStart: {
       duration: 250,
       render: function() {
-        content.toggleAnimationClass('is-exiting');
+        content.addClass('is-exiting');
         $body.animate({ 'scrollTop': 0 });
       }
     }
-  }).data('smoothstate')
+  }).data('smoothState')
 
   fetch(url, { method: 'get' })
     .then(res => {
