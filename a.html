@@ -2,18 +2,22 @@
 <head>
   <script src="//code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="/loadjs.min.js"></script>
+  <script src="main.js"></script>
+  <script src="handlebars-v4.0.10.js"></script>
+  <script src="jquery.smoothState.min.js"></script>
+  <script src="signals.min.js"></script>
 </head>
 <body>
-  <div>
-    <div>2 pageB - navigate. 4 spa - turbo, smoothstate, https://zinoui.com/demo/pushstate</div>
-    <div>1 fetch some data and show it - some ways: dot, mustache, handlebars. how is different from ssr.</div>
-    <div>http://jsonplaceholder.typicode.com</div>
+  <link rel="stylesheet" href="ex/_css/main.css"/>
+  <div class="links"><a href="a.html">PAGE A</a><a href="b.html">PAGE B</a></div>
+  <div class="master-content anim-element anim-element--fadein">
+    <h1>doggos here</h1>
+    <div class="doggos">
+      <script id="dogNames" type="text/x-handlebars-template">
+        <ul class="doggo-list anim-element anim-element--fadein">{{#each list}}
+          <li>{{this}}</li>{{/each}}
+        </ul>
+      </script>
+    </div>
   </div>
-  <script>
-    console.log('oh hi A')
-    // 5: observer, fire page about to change event, or page changed. ex signals, but there are many
-    //6 app shell. add page C
-    
-    //other https://www.youtube.com/watch?v=ZFVvpR1GfTc&t=2669s
-  </script>
 </body>

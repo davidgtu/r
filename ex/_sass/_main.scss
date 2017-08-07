@@ -1,0 +1,37 @@
+.master-content {
+  margin-top: 10vh;
+  &.anim-element {
+    animation-duration: 0.5s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
+
+  &.anim-element--fadein {
+    animation-name: fadeIn;
+  }
+
+  &.is-exiting {
+    .anim-element {
+      animation-direction: alternate-reverse;
+    }
+  }
+
+}
+
+.doggo-list {
+  &.anim-element {
+    animation-duration: 1s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
+
+  &.anim-element--fadein {
+    animation-name: fadeIn;
+  }
+
+  &.is-exiting {
+    .anim-element {
+      animation-direction: alternate-reverse;
+    }
+  }
+}

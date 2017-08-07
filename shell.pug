@@ -1,6 +1,13 @@
 head
     script(src='//code.jquery.com/jquery-3.2.1.slim.min.js')
     script(src='/loadjs.min.js')
-
+    script(src='main.js')
+    script(src='handlebars-v4.0.10.js')
+    script(src='jquery.smoothState.min.js')
+    script(src='signals.min.js')
 body
-    
+  link(rel='stylesheet', href='ex/_css/main.css')
+  include partials/_nav
+  
+  .master-content.anim-element.anim-element--fadein
+    block content

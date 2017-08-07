@@ -2,11 +2,15 @@
 <head>
   <script src="//code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="/loadjs.min.js"></script>
+  <script src="main.js"></script>
+  <script src="handlebars-v4.0.10.js"></script>
+  <script src="jquery.smoothState.min.js"></script>
+  <script src="signals.min.js"></script>
 </head>
 <body>
-  <div>
-    <div>3 go to pageA</div>
-    <div>7 form - on click of button show data - jsForm, here</div>
+  <link rel="stylesheet" href="ex/_css/main.css"/>
+  <div class="links"><a href="a.html">PAGE A</a><a href="b.html">PAGE B</a></div>
+  <div class="master-content anim-element anim-element--fadein">
+    <p>this is page b!</p>
   </div>
-  <script>console.log('oh hi B')</script>
 </body>
